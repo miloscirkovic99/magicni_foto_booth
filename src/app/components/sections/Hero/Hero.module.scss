@@ -1,0 +1,28 @@
+.hero_container {
+    background-image: url('/HeroSection.png');
+    height: 80vh; // Full viewport height for a full-screen effect
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+    // Optional: Add a dark overlay to improve text readability
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3); // Dark overlay with 30% opacity
+      z-index: 1;
+    }
+  
+    // Ensure content is above the overlay
+    > * {
+      position: relative;
+      z-index: 2;
+    }
+  }
