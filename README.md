@@ -1,82 +1,141 @@
-# MagiciniFotoBooth
+# 🎭 Magic Mirror — Event Marketing Website
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+🔗 Live website: https://www.magicnifotobooth.com/
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+---
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/tutorials/react-standalone-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+## 🌍 English
 
-## Finish your remote caching setup
+### 📌 Project Overview
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/m36qasMA9C)
+Magic Mirror is a **marketing-focused website** created for **Magicni Photo Booth**, an event entertainment business.  
+The website is designed to promote services, build brand trust, and convert visitors into leads.
 
+This is a **landing-style marketing site**, not a complex web application.
 
-## Run tasks
+---
 
-To run the dev server for your app, use:
+### 🎯 Website Goals
 
-```sh
-npx nx serve magicini-foto-booth
-```
+- Promote Magicni Photo Booth services  
+- Generate business inquiries through a contact form  
+- Showcase real event experiences and social proof  
+- Drive traffic to Instagram and social media channels  
+- Present a premium, modern event brand  
 
-To create a production bundle:
+---
 
-```sh
-npx nx build magicini-foto-booth
-```
+### 🧠 UX & Design Philosophy
 
-To see all available targets to run for a project, run:
+- Premium and modern visual identity  
+- Emotion-driven event storytelling  
+- Clear calls-to-action (Book, Contact, Availability)  
+- Optimized for mobile users and social media traffic  
 
-```sh
-npx nx show project magicini-foto-booth
-```
-        
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+---
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+### 🧰 Technologies Used
 
-## Add new projects
+- React (17+)
+- Material UI v7
+- Emotion (CSS-in-JS)
+- JavaScript (ES6+)
 
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
+---
 
-Use the plugin's generator to create new projects.
+### 🧱 Architecture
 
-To generate a new application, use:
+- Section-based landing page architecture  
+- Reusable UI and marketing components  
+- SEO-friendly semantic structure  
+- Mobile-first responsive layout  
 
-```sh
-npx nx g @nx/react:app demo
-```
+---
 
-To generate a new library, use:
+### 📂 Main Features
 
-```sh
-npx nx g @nx/react:lib mylib
-```
+- Modular landing page sections  
+- Instagram integration (external links)  
+- Contact form for business inquiries  
+- Image galleries showcasing real events  
+- Testimonials and client logos  
 
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
+---
 
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+### 📱 Performance & Accessibility
 
+- Optimized image loading  
+- Responsive design for all screen sizes  
+- SEO-friendly heading structure  
 
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+---
 
-## Install Nx Console
+## 🇷🇸 Srpski
 
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
+### 📌 Opis Projekta
 
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+Magic Mirror je **marketinški web sajt** napravljen za **Magicni Photo Booth**, biznis iz oblasti zabave i događaja.  
+Sajt je osmišljen da promoviše usluge, gradi poverenje i pretvara posetioce u potencijalne klijente.
 
-## Useful links
+Ovo je **landing tip sajta**, a ne kompleksna web aplikacija.
 
-Learn more:
+---
 
-- [Learn more about this workspace setup](https://nx.dev/getting-started/tutorials/react-standalone-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+### 🎯 Cilj Sajta
 
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- Promocija Magicni Photo Booth usluga  
+- Generisanje upita putem kontakt forme  
+- Prikaz realnih događaja i iskustava  
+- Usmeravanje korisnika ka Instagram profilu  
+- Izgradnja premium i modernog brenda  
+
+---
+
+### 🧠 UX & Dizajn Filozofija
+
+- Premium i savremen vizuelni identitet  
+- Emocionalno pripovedanje vezano za događaje  
+- Jasni pozivi na akciju (Rezervacija, Kontakt)  
+- Optimizacija za mobilne korisnike i društvene mreže  
+
+---
+
+### 🧰 Korišćene Tehnologije
+
+- React (17+)
+- Material UI v7
+- Emotion (CSS-in-JS)
+- JavaScript (ES6+)
+
+---
+
+### 🧱 Arhitektura
+
+- Sekcijski organizovan landing sajt  
+- Ponovno upotrebljive UI komponente  
+- SEO-friendly struktura  
+- Mobile-first responzivan dizajn  
+
+---
+
+### 📂 Glavne Funkcionalnosti
+
+- Modularne sekcije sajta  
+- Linkovi ka Instagram profilu  
+- Kontakt forma za poslovne upite  
+- Galerije sa realnih događaja  
+- Testimoniali i logotipi klijenata  
+
+---
+
+### 📱 Performanse i Pristupačnost
+
+- Optimizovano učitavanje slika  
+- Responzivan prikaz na svim uređajima  
+- Pravilna SEO hijerarhija naslova  
+
+---
+
+## 📬 Live Website
+
+👉 https://www.magicnifotobooth.com/
