@@ -53,7 +53,7 @@ export default function ContactForm() {
     >
       <Container maxWidth="sm" sx={{ position: 'relative', zIndex: 1 }}>
         <SectionHeader 
-          title="Učinimo Utisak Zajedno" 
+          title="Tvoj događaj zaslužuje utisak" 
           subtitle="Popuni obrazac i naš tim će te kontaktirati u roku od 24h sa detaljima i prilagođenom ponudom za tvoj događaj."
         />
 
@@ -156,7 +156,7 @@ export default function ContactForm() {
               mt: 1,
             }}
           >
-            Brzo odgovoriće ❤️ Prosečan odgovor: 2-4 sata tokom radnog vremena
+            Radujemo se Vašem zahtevu i budućoj saradnji! 🎉
           </Typography>
         </Box>
       </Container>

@@ -39,7 +39,7 @@ export function TopNavigation() {
             alignItems: 'center',
           }}
         >
-          <Typography
+          {/* <Typography
             variant="h6"
             sx={{
               fontWeight: 700,
@@ -52,7 +52,8 @@ export function TopNavigation() {
             }}
           >
             Magic Mirror
-          </Typography>
+          </Typography> */}
+          <img src="/logo.png" alt="Magic Mirror Logo" width={80} height={80} style={{ marginLeft: 8 }} />
 
           {!isMobile && (
             <Box sx={{ display: 'flex', gap: 0.5, alignItems: 'center', flex: 1, justifyContent: 'center' }}>
@@ -92,7 +93,7 @@ export function TopNavigation() {
               onClick={() => scrollToSection('contact')}
               sx={{ whiteSpace: 'nowrap', px: 3 }}
             >
-              Zakaži Sada
+              Zakaži sada
             </CustomButton>
           )}
 
@@ -168,7 +169,7 @@ export function TopNavigation() {
                   setMobileMenuOpen(false);
                 }}
               >
-                Zakaži Sada
+                Zakaži sada
               </CustomButton>
             </Box>
           </Drawer>

@@ -17,7 +17,7 @@ const features = [
   {
     icon: <AutoFixHighIcon sx={{ fontSize: 50, color: '#FF00AA' }} />,
     title: 'Kompletan Brend Pregled',
-    description: 'Prilagođeni šabloni, logoi, boje i animacije – vaš brend sjaje na svakoj fotografiji.',
+    description: 'Prilagođeni šabloni, logoi, boje i animacije – Vaš brend sjaje na svakoj fotografiji.',
   },
   {
     icon: <PhotoCameraIcon sx={{ fontSize: 50, color: '#FF00AA' }} />,
@@ -63,8 +63,8 @@ export default function WhyChooseUs() {
     >
       <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
         <SectionHeader
-          title="Zašto Izabrati Magic Mirror?"
-          subtitle="Kombinacija tehnologije, zabave i profesionalizma koja čini svaki događaj specijalnim. Naši gosti kažu da je ovo najbolji deo njihove zabave."
+          title="Zašto izabrati magic mirror?"
+          subtitle="Kombinacija tehnologije, zabave i profesionalizma koja čini svaki događaj specijalnim."
         />
 
         <Grid container spacing={{ xs: 2, md: 3 }} sx={{ mb: { xs: 6, md: 8 } }}>
@@ -106,7 +106,7 @@ export default function WhyChooseUs() {
           onClick={() => scrollToSection('contact')}
           sx={{ px: { xs: 3, md: 5 }, py: { xs: 1.5, md: 2 } }}
         >
-          Rezerviši Za Tvoj Događaj
+          Rezerviši za tvoj događaj
         </CustomButton>
       </Container>
       </Box>

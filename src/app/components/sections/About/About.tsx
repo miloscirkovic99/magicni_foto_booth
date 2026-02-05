@@ -57,11 +57,11 @@ export default function About() {
             </Typography>
 
             <Typography variant="body1" sx={{ mb: 2, color: '#E0E0E0', lineHeight: 1.9 }}>
-              Magic Mirror je više od običnog ogledala – to je kapsula iskustva koja kombinuje najnoviju tehnologiju sa zabavom. Naš napredni sistem sa ekranom osetljivim na dodir, senzorima pokreta i AI tehnologijom kreira instant foto iskustva koja vaši gosti neće moći zaboraviti.
+              Magic Mirror je više od običnog ogledala – to je kapsula iskustva koja kombinuje najnoviju tehnologiju sa zabavom. Naš napredni sistem sa ekranom osetljivim na dodir, senzorima pokreta i AI tehnologijom kreira instant foto-iskustva koja Vaši gosti neće zaboraviti.
             </Typography>
 
             <Typography variant="body1" sx={{ mb: 4, color: '#E0E0E0', lineHeight: 1.9 }}>
-              Od neonskih efekata do prilagođenih šablona – svaka fotografija postaje deo vašeg jedinstvenog brenda. Gosti se odmah šale, poziraju i dele, stvarajući organsku promociju na društvenim mrežama.
+              Od neonskih efekata do prilagođenih šablona – svaka fotografija postaje deo Vašeg jedinstvenog brenda. Gosti se odmah šale, poziraju i dele, stvarajući organsku promociju na društvenim mrežama.
             </Typography>
 
             <Button
@@ -85,7 +85,7 @@ export default function About() {
                 },
               }}
             >
-              Rezerviši Sada
+              Rezerviši sada
             </Button>
           </Grid>
         </Grid>

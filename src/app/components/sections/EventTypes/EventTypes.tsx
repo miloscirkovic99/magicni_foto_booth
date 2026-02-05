@@ -5,25 +5,21 @@ import { useScrollToSection } from '../../../hooks/useScrollToSection';
 
 const events = [
   {
-    title: 'Ceremonija Venčanja',
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=500&h=500&fit=crop',
+    title: 'Ceremonija venčanja',
+    image: '/weeding.png',
     description: 'Neon ogledalo čini ceremoniju nezaboravnom',
   },
   {
-    title: 'Rođendanske Žurke',
-    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500&h=500&fit=crop',
-    description: 'Zabava do ponosa - gosti se dive interaktivnom iskustvu',
+    title: 'Rođendanske žurke',
+    image: '/birthday.png',
+    description: 'Zabava koja ostavlja bez daha — interaktivno iskustvo koje svi pamte',
   },
   {
-    title: 'Korporativni Događaji',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop',
+    title: 'Korporativni događaji',
+    image: '/corporate.png',
     description: 'Brendirajte svoju kompaniju kroz zabavnu aktivnost',
   },
-  {
-    title: 'Događaji Diplomiranja',
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=500&fit=crop',
-    description: 'Proslava sa doslom tehnologijom i sjajnim uspomenama',
-  },
+ 
 ];
 
 export default function EventTypes() {
@@ -34,12 +30,12 @@ export default function EventTypes() {
       <Box sx={{ color: 'white', py: { xs: 8, md: 12 }, textAlign: 'center' }}>
         <Container maxWidth="lg">
           <SectionHeader 
-            title="Savršeno Za Svaku Priliku"
+            title="Savršeno za svaku priliku"
             subtitle="Bilo koja vrsta događaja postaje nezaboravna sa Magic Mirror-om. Od intimnih skupova do velikih proslava, mi imamo rešenje za tebe."
             headingLevel="h2"
           />
 
-        <Grid container spacing={{ xs: 2, md: 3 }} sx={{ mb: { xs: 6, md: 8 } }}>
+        <Grid container spacing={{ xs: 1, md: 3 }} sx={{ mb: { xs: 6, md: 8 } }} justifyContent={'center'}>
           {events.map((event, index) => (
             <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index} sx={{ animation: `fadeInUp 0.6s ease-out ${index * 0.1}s backwards` }}>
               <Card

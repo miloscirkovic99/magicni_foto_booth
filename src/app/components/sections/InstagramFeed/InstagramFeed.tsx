@@ -5,21 +5,18 @@ import SectionHeader from '../../ui/SectionHeader/SectionHeader';
 import { useOptimizedImage } from '../../../hooks/useOptimizedImage';
 
 const instagramPosts = [
-  'https://images.unsplash.com/photo-1519671482677-504be0271101?w=400&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=400&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=400&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1516939884455-1aa7b079b3c2?w=400&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1519915212116-7cfef71f0d3e?w=400&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1519671482677-504be0271101?w=400&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1517457373614-b7152f800fd1?w=400&h=400&fit=crop',
+  '/about_img.png ',
+  '/inst_feed.jpg',
+  '/inst_feed_people.jpg',
+  '/inst_feed_people_group.jpg',
+ 
 ];
 
 function InstagramImage({ src, index }: { src: string; index: number }) {
   const { imageSrc, imgRef } = useOptimizedImage({ 
     src, 
     alt: `Instagram post ${index + 1}`,
-    placeholder: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="400"%3E%3Crect fill="%231a0a2e" width="400" height="400"/%3E%3C/svg%3E'
+    placeholder: '/about_image .png',
   });
 
   return (
@@ -108,7 +105,7 @@ export default function InstagramSection() {
                 Vidite Magiju na Instagram-u
               </Typography>
               <Typography variant="caption" sx={{ color: '#888' }}>
-                @magicno_ogledalo_nis_nis - Prati nas za nove videe i fotos
+                @magicno_ogledalo_nis_nis
               </Typography>
             </Box>
           </Box>
@@ -120,7 +117,7 @@ export default function InstagramSection() {
               maxWidth: { xs: '200px', sm: '180px' },
             }}
           >
-            Prati Sada
+            Prati sada
           </CustomButton>
         </Box>
 

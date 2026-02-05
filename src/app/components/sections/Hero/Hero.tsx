@@ -36,8 +36,8 @@ export default function Hero() {
         <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
           <Box sx={{ animation: 'fadeInDown 0.8s ease-out' }} component="header">
             <SectionHeader 
-              title="NAPRAVI SVAKI KLIK MAGIČNIM." 
-              subtitle="Transformišite vašu zabavu u nezaboravno iskustvo sa najnaprednijom interaktivnom fotografijom. Magic Mirror čini svaki trenutak vrednim memorisanja."
+              title="NAPRAVITE DA TRENUTCI POSTANU USPOMENE." 
+              subtitle="Unesite dozu magije u Vaš događaj uz interaktivni Magic Mirror – zabava, emocija i fotografije koje ostaju zauvek."
             />
             
             <Box

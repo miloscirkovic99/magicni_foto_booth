@@ -7,7 +7,7 @@ import { useScrollToSection } from '../../../hooks/useScrollToSection';
 const faqItems = [
   {
     question: 'Kako tačno funkcioniše Magic Mirror?',
-    answer: 'Magic Mirror koristi kombinaciju touch screen ekrana, senzora pokreta i AI tehnologije. Gost se postavi ispred ogledala, njiš rukama ili govori komande, a sistem snima video, nanosi efekte i odmah štampa ili šalje fotografiju. Ceo proces traje 2-3 sekunde per fotografiju.',
+    answer: 'Magic Mirror koristi kombinaciju touch screen ekrana, senzora pokreta i AI tehnologije. Gost se postavi ispred ogledala, pokret ruke ili govori komande, a sistem snima video, nanosi efekte i odmah štampa ili šalje fotografiju. Ceo proces traje 2-3 sekunde po fotografiju.',
   },
   {
     question: 'Za koje događaje je Magic Mirror idealan?',
@@ -15,20 +15,17 @@ const faqItems = [
   },
   {
     question: 'Koliko prostora je potrebno za postavljanje?',
-    answer: 'Idealno je 3x3 metra, ali može funkcionisati i na manjim površinama (2x2.5m). Trebaju nam električna priključnica i lagana beli zid ili pozadina za najbolje rezultate.',
+    answer: 'Idealno je 3x3 m, ali može funkcionisati i na manjim površinama (2x2.5m). Potrebno nam je električna priključnica i beli zid ili pozadina za najbolje rezultate.',
   },
   {
     question: 'Mogu li prilagoditi šablone i dizajn fotografija?',
-    answer: 'Apsolutno! Prilagođavamo sve - logo tvog brenda, boje, animacije, tekst i filtre. Fotografije mogu biti u temi tvojeg događaja (npr. neon, klasika, zabavne maske).',
+    answer: 'Apsolutno! Prilagođavamo sve - logo tvog brenda, boje, animacije, tekst i filtere. Fotografije mogu biti u temi tvojeg događaja (npr. neon, klasika, zabavne maske).',
   },
   {
     question: 'Da li dolazi operator sa Magic Mirror-om?',
-    answer: 'Da! Naš profesionalni operator je tu celo vreme. Pomaže gostima, brine o logistici, štampa fotografije i omogućava digitalnu distribuaciju putem QR kodova, e-maila ili Whatsappa.',
+    answer: 'Da! Naš profesionalni operator je tu celo vreme. Pomaže gostima, brine o logistici, štampa fotografije i omogućava digitalnu distribuaciju putem QR kodova, e-maila ili Whatsapp-a.',
   },
-  {
-    question: 'Koja je cena i da li postoje dodatne opcije?',
-    answer: 'Cena zavisi od dužine rentiranja, broja fotografija i prilagođavanja dizajna. Dodatne opcije: brzoplazne printe (instant hard copy), branding paketi, GIF sekvence i live social media upload. Kontaktiraj nas za personalizovanu ponudu.',
-  },
+  
 ];
 
 export default function FAQs() {
@@ -48,7 +45,7 @@ export default function FAQs() {
     >
       <Container maxWidth="md">
         <SectionHeader 
-          title="Česta Pitanja" 
+          title="Česta pitanja" 
           subtitle="Sve što trebaš da znaš o Magic Mirror-u. Ako imaš dodatna pitanja, slobodno nas kontaktiraj!"
         />
 
@@ -125,7 +122,7 @@ export default function FAQs() {
               fontSize: { xs: '0.95rem', md: '1.05rem' },
             }}
           >
-            Još neki detalj? Naš tim je spreman da odgovori na sva tvoja pitanja! 🎭
+            Izostavili smo nešto? Naš tim je spreman da odgovori na sva tvoja pitanja! 🎭
           </Typography>
 
           <CustomButton 
