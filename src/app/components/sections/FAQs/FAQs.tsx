@@ -129,7 +129,7 @@ export default function FAQs() {
             onClick={() => scrollToSection('contact')}
             sx={{ px: { xs: 3, md: 5 }, py: { xs: 1.5, md: 2 } }}
           >
-            Kontaktiraj Nas
+            Kontaktiraj nas
           </CustomButton>
         </Box>
       </Container>

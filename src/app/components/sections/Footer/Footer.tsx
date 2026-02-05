@@ -26,21 +26,9 @@ export default function Footer() {
         <Container maxWidth="lg">
           <Grid container spacing={{ xs: 4, md: 6 }} sx={{ mb: 4 }}>
             <Grid size={{ xs: 12, md: 4 }} sx={{ textAlign: { xs: 'center', md: 'left' } }}>
-              <Typography
-                variant="h6"
-                sx={{
-                fontWeight: 700,
-                mb: 2,
-                background: 'linear-gradient(135deg, #FFFFFF 0%, #FF00AA 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}
-            >
-              Magic Mirror
-            </Typography>
+             <img src="/logo.png" alt="Magic Mirror Logo" width={120} height={120} style={{ marginLeft: 8 }} />
             <Typography variant="body2" sx={{ color: '#C0C0C0', mb: 3 }}>
-              Kreiranje nezaboravnih iskustava kroz interaktivnu fotografiju.
+              Pretvorite svaki trenutak u nezaboravno iskustvo kroz interaktivnu fotografiju.
             </Typography>
           </Grid>
 

@@ -10,6 +10,7 @@ const navItems = [
   { label: 'O nama', id: 'about' },
   { label: 'Usluge', id: 'why' },
   { label: 'Tipovi događaja', id: 'events' },
+  { label: 'Cene', id: 'pricing' },
   { label: 'Kontakt', id: 'contact' },
 ];
 
