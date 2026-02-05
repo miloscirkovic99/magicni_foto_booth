@@ -28,6 +28,19 @@ export interface Booth {
   
   export interface CustomFormData {
     name: string;
+    phone: string;
     email: string;
+    eventType: string;
     message: string;
+  }
+  
+  export interface ContactApiResponse {
+    success: boolean;
+    message: string;
+    data?: CustomFormData;
+  }
+  
+  export interface ContactApiError {
+    message: string;
+    field?: string;
   }

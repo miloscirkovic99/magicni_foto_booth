@@ -10,7 +10,11 @@ export default defineConfig({
 
   server: {
     port: 4200,
-    host: 'localhost',
+    host: '0.0.0.0',
+    hmr: {
+      host: 'localhost',
+      port: 4200,
+    },
   },
 
   preview: {

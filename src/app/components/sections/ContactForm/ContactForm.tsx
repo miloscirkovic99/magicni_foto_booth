@@ -1,18 +1,13 @@
 import { useState } from 'react';
-import { Box, TextField, Typography, Container, Grid } from '@mui/material';
+import { Box, TextField, Typography, Container, Grid, Alert } from '@mui/material';
 import CustomButton from '../../ui/CustomButton/CustomButton';
 import SectionHeader from '../../ui/SectionHeader/SectionHeader';
-
-interface FormData {
-  name: string;
-  phone: string;
-  email: string;
-  eventType: string;
-  message: string;
-}
+import ConfirmationDialog from '../../ui/ConfirmationDialog/ConfirmationDialog';
+import { CustomFormData } from '../../../../shared/types/index';
+import useContactFormSubmit from '../../../hooks/useContactFormSubmit';
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState<FormData>({
+  const [formData, setFormData] = useState<CustomFormData>({
     name: '',
     phone: '',
     email: '',
@@ -20,15 +15,36 @@ export default function ContactForm() {
     message: '',
   });
 
+  const [dialogOpen, setDialogOpen] = useState(false);
+  const { isLoading, error, success, submitForm, resetState } = useContactFormSubmit();
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
+    if (error?.field === name) {
+      resetState();
+    }
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    setFormData({ name: '', phone: '', email: '', eventType: '', message: '' });
+
+    if (!formData.name || !formData.email || !formData.phone) {
+      console.error('Please fill in all required fields');
+      return;
+    }
+
+    const isSuccess = await submitForm(formData);
+    
+    if (isSuccess) {
+      setDialogOpen(true);
+      setFormData({ name: '', phone: '', email: '', eventType: '', message: '' });
+    }
+  };
+
+  const handleDialogClose = () => {
+    setDialogOpen(false);
+    resetState();
   };
 
   return (
@@ -67,6 +83,17 @@ export default function ContactForm() {
             animation: 'fadeInUp 0.8s ease-out 0.2s backwards',
           }}
         >
+          {error && (
+            <Alert
+              severity="error"
+              onClose={resetState}
+              sx={{
+                animation: 'slideDown 0.3s ease-out',
+              }}
+            >
+              {error.message}
+            </Alert>
+          )}
           <Grid container spacing={2}>
             <Grid size={{ xs: 12, sm: 6 }}>
               <TextField
@@ -139,13 +166,16 @@ export default function ContactForm() {
           <CustomButton
             type="submit"
             fullWidth
+            disabled={isLoading}
             sx={{
               py: 1.5,
               fontSize: '1rem',
               mt: 1,
+              opacity: isLoading ? 0.7 : 1,
+              cursor: isLoading ? 'not-allowed' : 'pointer',
             }}
           >
-            Pošalji zahtev
+            {isLoading ? 'Slanje u toku...' : 'Pošalji zahtev'}
           </CustomButton>
 
           <Typography
@@ -160,6 +190,13 @@ export default function ContactForm() {
           </Typography>
         </Box>
       </Container>
+
+      <ConfirmationDialog
+        open={dialogOpen}
+        onClose={handleDialogClose}
+        message="Vaš zahtev je uspešno poslat! Proverite vašu e-mail adresu za potvrdu i dodatne detalje."
+        email={formData.email}
+      />
       </Box>
     );
 }

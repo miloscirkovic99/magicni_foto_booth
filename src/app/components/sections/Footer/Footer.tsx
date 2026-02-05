@@ -52,13 +52,21 @@ export default function Footer() {
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                 <PhoneIcon sx={{ color: '#FF00AA', fontSize: 18 }} />
                 <Typography variant="body2" sx={{ color: '#C0C0C0' }}>
-                  +381 65 000 0000
+                  +381 61 242 36 83
+                
+                </Typography>
+              </Box>
+               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                <PhoneIcon sx={{ color: '#FF00AA', fontSize: 18 }} />
+                <Typography variant="body2" sx={{ color: '#C0C0C0' }}>
+                
+                  +381 60 661 5446
                 </Typography>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                 <EmailIcon sx={{ color: '#FF00AA', fontSize: 18 }} />
                 <Typography variant="body2" sx={{ color: '#C0C0C0' }}>
-                  info@magicmirror.rs
+                  nismagicnoogledalo@gmail.com
                 </Typography>
               </Box>
             </Box>
